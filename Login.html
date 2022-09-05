@@ -29,74 +29,65 @@
 
 <body>
     <div class="navbar">
-        <a> El muro del gremio</a>
+        <a class="home" href="index.html"><img src="img/Tecno Bazar-nav.png"></a>
     </div>
     <div class="formBox">
-
-
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-tab-pane"
-                    type="button" role="tab" aria-controls="login-tab-pane" aria-selected="true">Iniciar Sesion</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register-tab-pane"
-                    type="button" role="tab" aria-controls="register-tab-pane" aria-selected="false">Regitrarse</button>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab"
-                tabindex="0">
-                <form>
-                    <div class="form-group">
-                        <label for="logUserL">Nombre de usuario</label>
-                        <input type="text" class="form-control" id="logUser" name="UsuarioLogin">
+        <div class="login-wrap">
+            <div class="login-html">
+                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                <div class="login-form">
+                    <div class="sign-in-htm">
+                        <div class="group">
+                            <label for="user" class="label">Username</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input id="check" type="checkbox" class="check" checked>
+                            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign In">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <a href="#forgot">Forgot Password?</a>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="logPassL">Contraseña</label>
-                        <input type="password" class="form-control" id="logPass" name="PasswordLogin">
+                    <div class="sign-up-htm">
+                        <div class="group">
+                            <label for="user" class="label">Username</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Repeat Password</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Email Address</label>
+                            <input id="pass" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign Up">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <label for="tab-1">Already Member?</a>
+                        </div>
                     </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Recordar</label>
-                    </div>
-                    <button id="logBtn" class="btn btn-primary">Acceder</button>
-                </form>
+                </div>
             </div>
-            <div class="tab-pane fade" id="register-tab-pane" role="tabpanel" aria-labelledby="register-tab"
-                tabindex="0">
-                <form>
-                    <div class="form-group">
-                        <label for="RegNombreL">Nombre(s)</label>
-                        <input type="text" class="form-control" id="RegNombre" name="Nombre">
-                    </div>
-                    <div class="form-group">
-                        <label for="RegApellidosL">Apellidos</label>
-                        <input type="text" class="form-control" id="RegApellidos" name="Apellido">
-                    </div>
-                    <div class="form-group">
-                        <label for="RegFecNacL">Fecha de nacimiento</label>
-                        <input type="date" class="form-control" id="RegFecNac" name="RFeNac">
-                    </div>
-                    <div class="form-group">
-                        <label for="RegEmailL">Correo electronico</label>
-                        <input type="email" class="form-control" id="RegEmail" name="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="RegNUserL">Nombre de usuario</label>
-                        <input type="text" class="form-control" id="RegNUser" name="NombreUsuario">
-                    </div>
-                    <div class="form-group">
-                        <label for="RegPassL">Contraseña</label>
-                        <input type="password" class="form-control" id="RegPass" name="RegContr">
-                    </div>
-                    <div class="form-group">
-                        <label for="RegPImgL">Imagen de perfil</label>
-                        <input type="file" class="form-control" id="RegPImg" name="ImgPerfil">
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="regBtn">Registrar</button>
+        </div>
 
-                </form>
+       
             </div>
 
         </div>
@@ -104,7 +95,7 @@
     </div>
     </div>
 
-    <footer class="site-footer">
+    <footer class="site-footer sticky-md-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6">

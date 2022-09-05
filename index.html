@@ -17,16 +17,17 @@
 <header>
     <div class="NavbarC">
         <nav class="navbar sticky-top navbar-dark">
-            <a class="navbar-brand" href="#">El muro del gremio</a>
+            <a class="home" href="index.html"><img src="img/Tecno Bazar-nav.png"></a>
             <div class="SearchBar">
-                <form class="form-inline" action="/SearchNota" method="POST" enctype="multipart/form-data">
+                <form class="form-inline" action="Search.html" method="POST" enctype="multipart/form-data">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
                         name="SearchField">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <a class="btn btn-outline-success my-2 my-sm-0" href="Search.html">Search</a>
+                    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
                 </form>
             </div>
 
-            <div class="User_link">
+            <div class="User">
                 <div Class="avatar">
                     <img src="img/Profile.jpg" class="avatar" name="avtr">
                 </div>
@@ -35,7 +36,7 @@
             </div>
             <ul>
                 <a href="Login.html" class="btn btn-primary">Login</a>
-                <a href="RegUsr.html" class="btn btn-primary">Registrar</a>
+                <a href="Login.html" class="btn btn-primary">Registrar</a>
             </ul>
         </nav>
     </div>
@@ -52,23 +53,23 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/mhRise.jpg" class="d-block w-100" alt="Monster Hunter Sunbreak" height="400px">
+                        <img src="img/Tecno Bazar-profile.png" class="d-block w-100" alt="Monster Hunter Sunbreak" height="400px">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Monster Hunter Rise: Nuevo DLC</h5>
+                            <h5>Bienvenido</h5>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/eldenRing.jpg" class="d-block w-100" alt="Elden Ring" height="400px">
+                        <img src="img/Laptop.jpg" class="d-block w-100" alt="Elden Ring" height="400px">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Elden Ring: el regreso de Dark Souls</h5>
+                            <h5>Potencia portatil</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/GGStrive.jpg" class="d-block w-100" alt="Guilty Gear" height="400px">
+                        <img src="img/RTX-3080.jpg" class="d-block w-100" alt="Guilty Gear" height="400px">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Guilty Gear Strive: un refresco a los juegos de pelea</h5>
+                            <h5>Productos NVIDIA</h5>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </div>
                     </div>
@@ -85,59 +86,62 @@
             <div class="Box Side" id="Left">
                 <ul class="nav flex-column">
                     <li class="nav-item Category">
-                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item Category">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Componentes</a>
                     </li>
                     <li class="nav-item Category">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Monitores</a>
                     </li>
                     <li class="nav-item Category">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="#">Laptops</a>
                     </li>
                 </ul>
             </div>
 
             <div class="Box Center">
 
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col-sm-6">
+                <div class="row row-cols-1 row-cols-md-2" id="MostViews">
+                    <div class="col-sm-6" id="Product">
                         <div class="card mb-3">
-                            <img src="img/GGStrive.jpg" class="card-img-top" alt="...">
+                            <a href="Article.html">
+                            <img src="img/RTX-3080.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Guilty Gear Strive</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="Article.html" class="btn btn-primary">Leer</a>
+                                <h5 class="card-title">Tarjeta grafica NVIDIA RTX 3080</h5>
+                                <h6 class="Price">$14,346.87</h6>
+                                <a href="Article.html" class="btn btn-primary">Comprar</a>
                                 <span class="badge bg-warning">No aprobado</span>
                             </div>
+                            </a>
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="card mb-3">
-                            <img src="img/mhRise.jpg" class="card-img-top" alt="...">
+                            <a href="Article.html">
+                            <img src="img/Laptop.jpg" class="card-img-top" alt="...">
                             <div class="card-body" id="">
-                                <h5 class="card-title">Monster Hunter Rise</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="Article.html" class="btn btn-primary">Leer</a>
+                                <h5 class="card-title">Laptop Gaming</h5>
+                                <h6 class="Price">$23,346.87</h6>
+                                <a href="Article.html" class="btn btn-primary">Comprar</a>
                                 <span class="badge bg-success">aprobado</span>
                             </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-sm-6">
+                        <a href="Article.html">
                         <div class="card mb-3">
-                            <img src="img/eldenRing.jpg" class="card-img-top" alt="...">
+                            <img src="img/MonitorLG.jpg" class="card-img-top" alt="...">
                             <div class="card-body" id="">
-                                <h5 class="card-title">Elden Ring</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="Article.html" class="btn btn-primary">Leer</a>
+                                <h5 class="card-title">Monitor LG</h5>
+                                <h6 class="Price">$6,846.87</h6>
+                                <a href="Article.html" class="btn btn-primary">Comprar</a>
                                 <span class="badge bg-danger">Eliminado</span>
                             </div>
                         </div>
+                    </a>
                     </div>
                 </div>
                 <div class="PageNav">
@@ -159,39 +163,42 @@
                 <div class="row row-cols-1 row-cols-md-2">
                     <div class="col-sm-6">
                         <div class="card mb-3">
-                            <img src="img/GGStrive.jpg" class="card-img-top" alt="...">
+                            <a href="Article.html">
+                            <img src="img/RTX-3080.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Guilty Gear Strive</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="Article.html" class="btn btn-primary">Leer</a>
+                                <h5 class="card-title">Tarjeta grafica NVIDIA RTX 3080</h5>
+                                <h6 class="Price">$14,346.87</h6>
+                                <a href="Article.html" class="btn btn-primary">Comprar</a>
                                 <span class="badge bg-warning">No aprobado</span>
                             </div>
+                            </a>
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="card mb-3">
-                            <img src="img/mhRise.jpg" class="card-img-top" alt="...">
+                            <a href="Article.html">
+                            <img src="img/Laptop.jpg" class="card-img-top" alt="...">
                             <div class="card-body" id="">
-                                <h5 class="card-title">Monster Hunter Rise</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="Article.html" class="btn btn-primary">Leer</a>
+                                <h5 class="card-title">Laptop Gaming</h5>
+                                <h6 class="Price">$23,346.87</h6>
+                                <a href="Article.html" class="btn btn-primary">Comprar</a>
                                 <span class="badge bg-success">aprobado</span>
                             </div>
+                        </a>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="card mb-3">
-                            <img src="img/eldenRing.jpg" class="card-img-top" alt="...">
+                            <a href="Article.html">
+                            <img src="img/MonitorLG.jpg" class="card-img-top" alt="...">
                             <div class="card-body" id="">
-                                <h5 class="card-title">Elden Ring</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="Article.html" class="btn btn-primary">Leer</a>
+                                <h5 class="card-title">Monitor LG</h5>
+                                <h6 class="Price">$6,846.87</h6>
+                                <a href="Article.html" class="btn btn-primary">Comprar</a>
                                 <span class="badge bg-danger">Eliminado</span>
                             </div>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -199,7 +206,7 @@
         </div>
 
 
-        <footer class="site-footer">
+        <footer class="site-footer sticky-md-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">

@@ -9,19 +9,49 @@
     <title>Crear articúlo</title>
 </head>
 <body>
-    <div class="navbarC">El muro del gremio</div>
+    <div class="navbar">
+        <a class="home" href="index.html"><img src="img/Tecno Bazar-nav.png"></a>
+    </div>
     <div class="Centerbox">
         <div class="formBox">
             <form >
                 <div class="form-group">
-                  <label for="RegNombreL">Titulo</label>
-                  <input type="text" class="form-control" id="CrearTitulo" name="TituloNota" >
+                  <label for="RegNombreL">Nombre del producto</label>
+                  <input type="text" class="form-control" id="CrearNom" name="NamePrdct" >
                 </div>
+                <div class="form-group">
+                    <label for="RegApellidosL">Descripcion</label>
+                    <input type="text" class="form-control" id="CrearDesc" name="DescriptionPrdct">
+                  </div>
+                  <div class="form-group">
+                    <label for="RegApellidosL">Cotizable</label>
+                    <input type="checkbox" class="form-control" id="EsCotizable" name="IsQuotable">
+                  </div>
+                  <div class="form-group">
+                    <label for="RegApellidosL">Categoria(s)</label>
+                    <input type="text" class="form-control" id="Categoria" name="CategoryPrdct">
+                  </div>
                  <div class="form-group">
-                  <label for="RegApellidosL">Contenido</label>
-                  <input type="text" class="form-control" id="CrearContenido" name="ContenidoNota">
+                  <label for="RegApellidosL">Pecio</label>
+                  <input type="text" class="form-control" id="Precio" name="PricePrdct">
                 </div>
-                <button type="submit" class="btn btn-primary" id="regBtn">Guardar</button>
+                
+                <div class="form-group">
+                    <label for="RegApellidosL">Existencias</label>
+                    <input type="text" class="form-control" id="NumExitencias" name="StockPrdct">
+                  </div>
+                
+                  <div class="form-group">
+                    <label for="RegApellidosL">Imagenes</label>
+                    <input type="file" class="form-control" id="NumExitencias" name="ImgPrdct">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="RegApellidosL">Video</label>
+                    <input type="file" class="form-control" id="NumExitencias" name="VidPrdct">
+                  </div>
+
+                <button type="submit" class="btn btn-primary" id="SaveBtn">Guardar</button>
             </form>
         </div>
     </div>
